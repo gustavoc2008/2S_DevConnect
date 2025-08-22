@@ -1,0 +1,45 @@
+/* 1 Forma de utilizar uma fonte */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
+
+/* 2 Formar de utilizar uma fonte */
+/* @font-face {
+    font-family: Bitcount Prop Single;
+    src: url(../assets/fonts/Fontes/Bitcount_Prop_Single/BitcountPropSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+} */
+
+/* Variaveis */
+:root {
+    --cor-preto: #071013;
+    --cor-branco: #F1F1F1;
+    --cor-cinza: #A2AEBB;
+    --cor-azul-claro: #7CBBCE;
+    --cor-verde-claro: #5695A8;
+    --cor-verde-escuro: #315B63;
+
+    --borda: 1px solid var(--cor-preto);
+    --borda-arredondada: 10px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+
+* {
+    padding: 0;
+    /* Espaço Internos */
+    margin: 0;
+    /* Espaço Externo */
+    box-sizing: border-box;
+    /* Atribui espaços internos/externos e bordas no tamanho final do box*/
+    font-family: "Google Sans Code", monospace;
+}
+
+body {
+    background-color: var(--cor-branco);
+}
+
+h1 {
+    position: absolute; /* Altera a posição do elemento */
+    z-index: -1; /* Camadas do Elemento */
+    opacity: 0%; /* Opacidade */
+}
