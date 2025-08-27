@@ -1,7 +1,7 @@
 /* 1 Forma de utilizar uma fonte */
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
 
-/* 2 Formar de utilizar uma fonte */
+/* 2 Forma de utilizar uma fonte */
 /* @font-face {
     font-family: Bitcount Prop Single;
     src: url(../assets/fonts/Fontes/Bitcount_Prop_Single/BitcountPropSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
@@ -11,13 +11,15 @@
 :root {
     --cor-preto: #071013;
     --cor-branco: #F1F1F1;
-    --cor-cinza: #A2AEBB;
+    --cor-cinza: #6E6E6E;
+    --cor-cinza-claro: #D9D9D9;
+    --cor-cinza-claro2: #C2C2C2;
     --cor-azul-claro: #7CBBCE;
     --cor-verde-claro: #5695A8;
     --cor-verde-escuro: #315B63;
 
-    --borda: 1px solid var(--cor-preto);
-    --borda-arredondada: 10px;
+    --borda: 2px solid var(--cor-cinza);
+    --borda-arredondada: 5px;
 
     --tamanho-fonte-lg: 20px;
     --tamanho-fonte-md: 16px;
@@ -39,7 +41,42 @@ body {
 }
 
 h1 {
-    position: absolute; /* Altera a posição do elemento */
-    z-index: -1; /* Camadas do Elemento */
-    opacity: 0%; /* Opacidade */
+    position: absolute;
+    /* Altera a posição do elemento */
+    z-index: -1;
+    /* Camadas do Elemento */
+    opacity: 0%;
+    /* Opacidade */
+}
+
+/* Formulario */
+.formulario-botao-azul {
+    background-color: var(--cor-verde-escuro);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.formulario-campos>input {
+    border: var(--borda);
+    height: 35px;
+    background-color: var(--cor-cinza-claro);
+    opacity: 70%;
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+    border-radius: var(--borda-arredondada);
+}
+
+.formulario-campos>label {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza);
+    font-weight: 600;
+}
+
+main>div>p {
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
 }
