@@ -8,9 +8,12 @@ main {
 
 .container-flex-publi {
     background-color: var(--cor-cinza-claro);
-    height: 700px;
+    /* height: 700px; */
     width: 90%;
     max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 #storys {
@@ -28,9 +31,7 @@ main {
     width: 0;
 }
 
-.card-story {
-    /* background-color: var(--cor-cinza-claro2); */
-}
+.card-story {}
 
 .card-story>button {
     background-color: transparent;
@@ -52,9 +53,131 @@ main {
 }
 
 .formulario-botao-azul {
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
+    min-height: 40px;
 }
 
-h2 {
+#criar-publi {
+    background-color: var(--cor-verde-escuro);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: var(--borda-arredondada);
+}
+
+#criar-publi>h2 {
+    color: var(--cor-branco);
     font-size: var(--tamanho-fonte-lg);
+    font-weight: 500;
+}
+
+#criar-publi>form>textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: none;
+    border: var(--borda);
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+#criar-publi>form>footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Seção Publicaçõesn*/
+
+#publicacoes {
+    background-color: var(--cor-verde-escuro);
+    width: 100%;
+}
+
+.card-publi {
+    background-color: var(--cor-branco);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.card-publi>header>a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    text-decoration: none;
+}
+
+.card-publi>figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-publicacao {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 350px;
+}
+
+.card-publi>figure>figcaption {
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-md);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    order: 2;
+    margin: 15px;
+}
+
+.descricao-publicacao {
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+}
+
+.curtido-por {
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+}
+
+.ver-comentarios {
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 15px;
+    background-color: transparent;
+    border: none;
+}
+
+.interacoes-publicacao {
+    display: flex;
+    column-gap: 36px;
+    order: 1;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.interacoes-publicacao>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.card-publi>figure>button {
+    background-color: transparent;
+    border: none;
+    font-size: var(--tamanho-fonte-sm);
+    order: 3;
+    margin-left: 15px;
 }

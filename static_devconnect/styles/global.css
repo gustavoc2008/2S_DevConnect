@@ -34,6 +34,7 @@
     box-sizing: border-box;
     /* Atribui espaços internos/externos e bordas no tamanho final do box*/
     font-family: "Bitcount Prop Single";    
+    outline-color: var(--cor-cinza);
 }
 
 body {
@@ -51,7 +52,7 @@ h1 {
 
 /* Formulario */
 .formulario-botao-azul {
-    background-color: var(--cor-verde-escuro);
+    background-color: var(--cor-verde-claro);
     border-radius: var(--borda-arredondada);
     border: none;
     height: 35px;
@@ -90,15 +91,14 @@ h1 {
     display: inline-block;
     width: 100%;
     max-width: 300px;
-    height: 40px;
-    background-color: var(--cor-cinza-claro2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#upload {
+    min-height: 40px;
+    padding: 10px;
+    background-color: var(--cor-verde-claro);
     color: var(--cor-branco);
+    text-align: center;
+    border-radius: var(--borda-arredondada);
+    font-weight: 500;
+    opacity: 61%;
 }
 
 main>div>p {
@@ -139,7 +139,7 @@ main>div>p {
     justify-content: space-between;
 }
 
-#foto-perfil {
+.foto-perfil {
     width: 40px;
     height: 40px;
     object-fit: cover;
