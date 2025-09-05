@@ -1,0 +1,236 @@
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* importante para empilhar os elementos verticalmente */
+    align-items: center;
+}
+
+
+#cabecalho-foto-perfil {
+    background-color: var(--cor-cinza-claro);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+    gap: 30px;
+    border-bottom: var(--borda);
+}
+
+.foto-tela-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.foto-tela-perfil>img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    /*mantem a proporção com um zoom para adaptar ao tamanho do elemento*/
+    object-position: center;
+    border-radius: 100%;
+
+}
+
+#nome-usuario {
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 650;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.nome-usuario {
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.detalhes {
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+.detalhes>a {
+    text-decoration: none;
+    color: var(--cor-preto);
+}
+
+#informacoes {
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 650;
+    padding: 20px;
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-cinza-claro);
+}
+
+#informacoes>a {
+    text-decoration: none;
+    color: var(--cor-verde-escuro);
+}
+
+@media (max-width: 768px) {
+    #cabecalho-foto-perfil {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px;
+    }
+
+    .detalhes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #informacoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foto-tela-perfil>img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+#cabecalho-publicacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagem-janela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+#imagem-janela>img {
+    width: 30px;
+    height: 30px;
+}
+
+#imagem-janela>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--tamanho-fonte-lg);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#publicacoes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* espaço entre os cards */
+    padding: 20px;
+}
+
+.card-publi {
+    background-color: var(--cor-branco);
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+}
+
+
+.card-publi>header {
+    padding: 15px;
+    background-color: var(--cor-cinza-claro);
+}
+
+.card-publi>header>a {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    text-transform: lowercase;
+}
+
+.card-publi>div {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--cor-cinza-claro);
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-publicacao {
+    object-fit: cover;
+    /*redimensiona a imagem*/
+    object-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+.card-publi>div>div {
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-md);
+    font-weight: 500;
+    display: flex;
+    /*por padrão o flexbox*/
+    align-items: center;
+    column-gap: 5px;
+    order: 2;
+    margin: 15px;
+}
+
+.descricao-publicacao {
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+}
+
+.interacoes-publicacao {
+    width: 100%;
+    max-width: 150px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.interacoes-publicacao>button {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.card-publi>div>button {
+    background-color: transparent;
+    border: none;
+
+    color: var(--cor-cinza);
+    font-size: var(--tamanho-fonte-sm);
+
+    order: 3;
+
+    margin-left: 15px;
+}
+
+

@@ -14,6 +14,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 15px;
 }
 
 #storys {
@@ -99,7 +100,7 @@ main {
 }
 
 .card-publi {
-    background-color: var(--cor-branco);
+    background-color: var(--cor-cinza-claro);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -108,17 +109,21 @@ main {
 }
 
 .card-publi>header>a {
+    background-color: var(--cor-branco);
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 10px;
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-preto);
     text-decoration: none;
 }
 
 .card-publi>figure {
+    background-color: var(--cor-branco);
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .imagem-publicacao {
@@ -181,3 +186,8 @@ main {
     order: 3;
     margin-left: 15px;
 }
+
+#botao-curtir:focus {
+    background-color: var(--cor-vermelha);
+    outline: none;
+  }
